@@ -8,42 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="page">
 
     <!--Верхняя линия-->
     <header class="header">
-<nav>
+        <div class="container header-container">
+        <nav class="container-items">
     <a href="./index.html" class="header-logo link">
         <span class="logo-web-header">Web</span>Studio
     </a>
     <ul class="list header-list">
-        <li class="header-item">
-            <a class="link header-link" href="./index.html">Студия</a></li>
-        <li class="header-item">
-            <a class="link header-link" href="./portfolio.html">Портфолио</a></li>
-        <li class="header-item">
-            <a class="link header-link" href="">Контакты</a></li>
+        <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
+        <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
+        <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
     </ul>
-</nav>
+        </nav>
+        <div class="header-connect">
     <ul class="list header-items">
         <li class="header-item"><a class="link header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="header-item"><a class="link header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
+        </div>
+        </div>
+        <hr align="center" width="1600" size="2" color="#ECECEC" /> 
     </header>
     <main>
 
     <!--Шапка-->    
     <section class="tagline">
-        <h1 class="tagline-text">Эффективные решения для вашего бизнеса</h1>
-        <button class="tagline-btn" type="button">Заказать услугу</button>
+        <div class="container tagline-container">
+            <h1 class="tagline-title">Эффективные решения для вашего бизнеса</h1>
+            <button class="tagline-btn" type="button"><span class="tagline-btn-text">Заказать услугу</span></button>
+        </div>
     </section>
 
     <!--Список качеств-->
     <section class="feature">
-        <h2 class="special">Особенности</h2>
-        <ul class="list feature-list">
+    <div class="container feature-container">
+        <h2 class="visually-hidden">Особенности</h2>
+        <ul class="feature-list list">
             <li class="feature-item">
                 <h3 class="feature-title">Внимание к деталям</h3>
                 <p class="feature-text">
@@ -52,7 +58,7 @@
             </li>
         </ul>
 
-        <ul class="list feature-list">
+        <ul class="feature-list list">
             <li class="feature-item">
                 <h3 class="feature-title">Пунктуальность</h3>
                 <p class="feature-text">
@@ -61,7 +67,7 @@
             </li>
         </ul>
 
-        <ul class="list feature-list">
+        <ul class="feature-list list">
             <li class="feature-item">
                 <h3 class="feature-title">Планирование</h3>
                 <p class="feature-text">
@@ -70,18 +76,20 @@
             </li>
         </ul>
 
-        <ul class="list feature-list">
+        <ul class="feature-list list">
             <li class="feature-item">
                 <h3 class="feature-title">Современные технологии</h3>
                 <p class="feature-text">
                     Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                 </p>
             </li>
-        </ul>       
+        </ul>
+    </div>       
     </section>
 
     <!--Фото чем мы занимаемся-->
     <section class="about">
+    <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
         <ul class="list about-list">
             <li class="about-images">
@@ -94,38 +102,42 @@
                 <img src="./images/box3.jpg" alt="design" width="370" />
             </li>
         </ul>
+    </div>
     </section>
 
 <!--Наша команда-->
     <section class="team">
+    <div class="container">
         <h2 class="team-text">Наша команда</h2>
         <ul class="list team-list">
-            <li class="team card">
+            <li class="team card-item">
                 <img src="./images/igor.jpg" alt="igor" width="270" />
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-position">Product Designer</p>
             </li>
-            <li class="team card">
+            <li class="team card-item">
                 <img src="./images/olga.jpg" alt="olga" width="270" />
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-position">Frontend Developer</p>
             </li>
-            <li class="team card">
+            <li class="team card-item">
                 <img src="./images/nick.jpg" alt="nicholas" width="270" />
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-position">Marketing</p>
             </li> 
-            <li class="team card">
+            <li class="team card-item">
                 <img src="./images/mih.jpg" alt="michael" width="270" />
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-position">UI Designer</p>
             </li>
         </ul>
+    </div>
     </section>
     </main>
 
     <!--Подвал-->
     <footer class="footer">
+        <div class="container">
         <a class="footer-logo link" href="./index.html">
             <span class="logo-web-footer">Web</span>Studio
         </a>
@@ -142,6 +154,7 @@
             </li>
         </ul>
     </address>
+</div>
     </footer>
 </body>
 </html>
