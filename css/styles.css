@@ -26,6 +26,8 @@ button {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -33,7 +35,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px;
+  outline: 2px solid tomato;
 }
 section {
   padding-top: 94px;
@@ -225,7 +227,7 @@ section {
 /*--Фото чем мы занимаемся--*/
 .about {
   padding-top: 0px;
-  padding-bottom: 94px;
+  padding-bottom: 0px;
 }
 .about-title {
   font-weight: bold;
@@ -247,10 +249,8 @@ section {
   margin-bottom: 30px;
 }
 /*--Наша команда--*/
-.team {
-  padding-top: 47px;
-  padding-bottom: 94px;
-}
+
+
 .team-text {
   font-weight: bold;
   font-size: 36px;
@@ -272,6 +272,7 @@ section {
   margin-top: 30px;
   margin-bottom: 10px;
 
+
 }
 .team-position {
   font-size: 16px;
@@ -279,7 +280,6 @@ section {
   color: var(--color-text);
   align-items: center;
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 30px;
 
 }
@@ -296,6 +296,7 @@ section {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background: var(--title-color);
 }
 
 /*--Подвал--*/
@@ -314,8 +315,8 @@ section {
   line-height: 1.19; 
   color: var(--title-color);
   display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 60px;
+  padding-bottom: 20px;
+
 
 }
 .footer-address-item:not(:last-child) {
@@ -342,7 +343,6 @@ section {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 20px;
   
 }
 /*---Фильтр---*/
@@ -406,9 +406,4 @@ section {
   font-size: 16px;
   line-height: 1.87;
   color: var(--color-text);
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
