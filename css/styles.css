@@ -346,6 +346,9 @@ section {
   
 }
 /*---Фильтр---*/
+.filter {
+  padding-bottom: 0px;
+}
 .filter-list {
   display: flex;
   justify-content: center;
@@ -365,16 +368,17 @@ section {
   min-height: 38px;
 }
 .filter-link:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: #188CE8;
+  color: var(--title-color);
 }
 /*----Порфолио---*/
 .portfolio {
-  padding-top: 0px;
+  padding-top: 34px;
   padding-bottom: 94px;
 }
 
@@ -392,6 +396,14 @@ section {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+.project {
+  padding: 20px 24px;
+  background: var(--title-color);
+  border-bottom: 1px solid #eeeee;
+  border-left: 1px solid #eeeee;
+  border-right: 1px solid #eeeee;
+
 }
 .portfolio-subtitle {
   font-weight: normal;
