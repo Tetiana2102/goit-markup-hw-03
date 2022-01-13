@@ -35,7 +35,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 section {
   padding-top: 94px;
@@ -249,6 +248,9 @@ section {
   margin-bottom: 30px;
 }
 /*--Наша команда--*/
+.team {
+  background: #F5F4FA;
+}
 
 
 .team-text {
